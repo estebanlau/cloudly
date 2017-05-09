@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css" rel="stylesheet">
+    <link href="CloudlyStyle.css" rel="stylesheet">
+    <link href='subscribe-better-master/subscribe-better.css' rel="stylesheet" type='text/css'>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="subscribe-better-master/jquery.subscribe-better.js"></script>
+    <script type="text/javascript" src=CloudlySQL.js></script>
+    
+  </head>
+
+  <script>
+    $(document).ready(function(){
+      $(".subscribe-me").subscribeBetter({
+        animation: "flyInUp",
+        autoClose: true,
+        delay: 500,
+        showOnce: false
+      });
+    });
+  </script>
+
+  <script>
+  </script>
+
+  <div class="subscribe-me">
+    <h2>Subscribe our Newsletter</h2>
+      <a href="#close" class="sb-close-btn">x</a>
+        <p>Subscribe to our mailing list to get updates to your email inbox</p>
+        <form>
+          <input type="email" placeholder="Email Address" id="email">
+          <input type="submit" value="Sign up" onclick="databaseControl(document.getElementById("email").value)"> <!-- onclick= -->
+        </form>
+  </div>
+
+
+  <body>
+    <div class="nav">
+      <div class="container">
+        <div class="row">
+        <ul class="pull-left">
+          <li><a href="#">Name</a></li>
+          <li><a href="#">Browse</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Log In</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Travel. Cloudly.</h1>
+        <p>Take your comfort with you.</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div> 
+
+    <div class="neighborhood-guides">
+      <div class="container">
+       <h2>Explore</h2>
+         <div class="row">
+           <div class="col-md-4">
+           <div class="thumbnail">
+           <img src="http://cdn.playbuzz.com/cdn/d2deaace-b42e-4556-9810-3f1c61ce724d/b30d92d5-f709-48bf-8641-173a1823a882.jpg"> <!--http://goo.gl/0sX3jq-->
+           </div>
+           <div class="thumbnail">
+           <img src="http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/France/Paris/paris-attractions-xlarge.jpg"> <!--http://goo.gl/an2HXY-->
+           </div>
+           </div>
+            <div class="col-md-4">
+            <div class="thumbnail">
+            <img src="http://cdn.pcwallart.com/images/turkey-country-wallpaper-2.jpg">
+           </div>
+           <div class="thumbnail">
+           <img src="http://www.indiaeducation.net/imagesvr_ce/6116/Sydney%20Opera%20House.jpg">
+           </div>
+            </div>
+            <div class="col-md-4">
+            <div class="thumbnail">
+           <img src="https://s-media-cache-ak0.pinimg.com/originals/9c/72/63/9c7263c7ea6780438b320dd39f075dd3.jpg">
+           </div>
+            </div>
+         </div>
+      </div>
+    </div>  
+
+    <div class="learn-more">
+	  <div class="container">
+	  <div class="row">
+	    <div>
+			<h3>Newsletter</h3>
+			<p>Sign up for email newsletter updates and promotions!</p>
+			<p><a href="#">Subscribe</a></p>
+	    </div>
+	  </div>
+	  </div>
+	</div>
+  </body>
+</html>
